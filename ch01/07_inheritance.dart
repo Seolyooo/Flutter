@@ -69,6 +69,7 @@ void main(){
   Animal a2 = Cat('야옹이', '고양이');
 
   a1.speak();
+  a1.move();
   a2.speak();
 
   if(a1 is Dog){

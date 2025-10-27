@@ -13,7 +13,7 @@ class Person {
 }
 
 class User {
-  // 속성명 앞에 _ 표기로 private 선언
+  // 속성명 앞에 _표기로 private 선언
   String _name;
   String _birth;
   int? _age;
@@ -34,7 +34,7 @@ class User {
     print('User.withAge 호출...');
   }
 
-  User.guest(this._name) : this._birth = 'Unknown', this._age = 0;
+  User.guest(this._name) : this._birth = 'Unknown', this._age = 0, this._email = 'Unknown';
 
   // factory 생성자 (객체를 캐싱하는 생성자)
   static final Map<String, User> _cache = {}; // User 객체 캐싱 저장소
